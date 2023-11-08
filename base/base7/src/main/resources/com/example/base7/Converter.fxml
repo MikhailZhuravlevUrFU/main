@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.TextFlow?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="488.0" prefWidth="329.0" style="-fx-background-color: #DEDEDE;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.base7.HelloController">
+   <children>
+      <Pane prefHeight="64.0" prefWidth="329.0" style="-fx-background-color: #414141;" AnchorPane.bottomAnchor="424.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label alignment="TOP_CENTER" layoutX="76.0" layoutY="11.0" text="Конвертер" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="Segoe UI Bold" size="34.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <TextField fx:id="inputs" layoutX="27.0" layoutY="91.0" prefHeight="54.0" prefWidth="275.0" promptText="Введите число" style="-fx-border-color: #414141" styleClass="text_field" stylesheets="@main.css">
+         <font>
+            <Font name="Segoe UI" size="15.0" />
+         </font>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </TextField>
+      <ComboBox fx:id="choice" layoutX="27.0" layoutY="173.0" prefHeight="25.0" prefWidth="129.0" promptText="Выберите" />
+      <TextFlow fx:id="tonn" layoutX="208.0" layoutY="233.0" prefHeight="42.0" prefWidth="111.0" />
+      <TextFlow fx:id="kilo" layoutX="208.0" layoutY="305.0" prefHeight="42.0" prefWidth="111.0" />
+      <TextFlow fx:id="gram" layoutX="208.0" layoutY="372.0" prefHeight="42.0" prefWidth="111.0" />
+      <Label layoutX="25.0" layoutY="245.0" text="Значение в тоннах:">
+         <font>
+            <Font name="Segoe UI" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="27.0" layoutY="316.0" text="Значение в килограммах:">
+         <font>
+            <Font name="Segoe UI" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="27.0" layoutY="383.0" text="Значение в граммах:">
+         <font>
+            <Font name="Segoe UI" size="15.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
