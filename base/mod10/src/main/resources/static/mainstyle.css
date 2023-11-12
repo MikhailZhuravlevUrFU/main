@@ -1,0 +1,95 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Растянуть страницу на всю высоту */
+}
+
+.header, .footer {
+    background-color: #2c2c2c;
+    padding: 20px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header img {
+    height: 100px; /* Укажите нужную высоту для вашего логотипа */
+    /* Дополнительные стили для вашего логотипа */
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+}
+
+.menu ul {
+    list-style: none;
+    padding: 0;
+    display: flex; /* Отображение пунктов меню в строку */
+}
+
+.menu ul li {
+    margin-left: 20px;
+    font-size: 30px;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.main {
+    background-color: #d3d3d3;
+    text-align: center;
+    padding: 50px;
+    flex: 1; /* Растянуть основной контент на всю доступную высоту */
+}
+
+h1 {
+    text-align: center;
+    font-size: 70px;
+}
+
+h2 {
+    text-align: center;
+    font-size: 40px;
+}
+
+.main-button {
+    background-color: red;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 20px;
+    border: none;
+    font-size: 20px;
+}
+
+.footer div{
+    color: white;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    position: relative; /* Добавляем относительное позиционирование для ::before */
+}
+
+.menu ul li a::before {
+    content: ''; /* Создаем элемент для подчеркивания */
+    position: absolute;
+    width: 100%;
+    height: 3px; /* Высота подчеркивания */
+    bottom: -5px; /* Подчеркивание будет ниже текста */
+    left: 0;
+    background-color: transparent; /* Изначально подчеркивание невидимо */
+    transition: background-color 0.3s; /* Добавляем плавный переход */
+}
+
+.menu ul li a:hover::before {
+    background-color: red; /* Цвет подчеркивания при наведении */
+}
